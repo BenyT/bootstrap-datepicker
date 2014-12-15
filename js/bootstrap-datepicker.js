@@ -410,6 +410,9 @@
 		show: function(){
 			if (!this.isInline)
 				this.picker.appendTo('body');
+			
+			//tip:update date-pick's date with input element's value async bind (eg:angularjs two ways bind)
+			this.update();	
 			this.picker.show();
 			this.place();
 			this._attachSecondaryEvents();
